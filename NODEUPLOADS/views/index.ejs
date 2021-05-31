@@ -15,11 +15,11 @@
         <h1>File Upload</h1>
         <!--display our message variable if it is undefined-->
         <%= typeof msg != 'undefined' ? msg : '' %> 
-        <form action="/upload" method="POST">
+        <form action="/upload" method="POST" enctype="multipart/form-data">
             <div class="file-field input-field">
               <div class="btn red">
                 <span>File</span>
-                <input name="myIMage" type="file">
+                <input name="myImage" type="file">
               </div>
               <div class="file-path-wrapper">
                 <input class="file-path validate" type="text">
